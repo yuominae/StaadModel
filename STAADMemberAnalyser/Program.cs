@@ -14,7 +14,7 @@ namespace STAADParameterGeneratorCMD
 
         static StaadModel staadModel;
 
-        static void Main(string[] args)
+        static void Main()
         {
             string savePath;
             StringBuilder output;
@@ -99,8 +99,8 @@ namespace STAADParameterGeneratorCMD
             s.Reset();
             s.Start();
 
-            output.Append(GatherDeflectionLengths(staadModel));
-            output.AppendLine(GatherBucklingLengths(staadModel));
+            output.Append(GatherDeflectionLengths());
+            output.AppendLine(GatherBucklingLengths());
 
             // Deflection paramaters
             using (var sw = new StreamWriter(savePath))
@@ -133,7 +133,7 @@ namespace STAADParameterGeneratorCMD
             return true;
         }
 
-        private static string GatherDeflectionLengths(StaadModel Model)
+        private static string GatherDeflectionLengths()
         {
             var output = new StringBuilder();
             IEnumerable<DeflectionLength> verticalMembers;
@@ -175,7 +175,7 @@ namespace STAADParameterGeneratorCMD
             return output.ToString();
         }
 
-        private static string GatherBucklingLengths(StaadModel Model)
+        private static string GatherBucklingLengths()
         {
             var output = new StringBuilder();
             BucklingLengthGenerator blg;

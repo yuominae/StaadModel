@@ -10,7 +10,7 @@ namespace STAADModelTests2
         private static string previouStatusMessage;
         private static StaadModel model;
 
-        static void Main(string[] args)
+        static void Main(string[] _)
         {
             Stopwatch st;
             ConsoleKey userInput;

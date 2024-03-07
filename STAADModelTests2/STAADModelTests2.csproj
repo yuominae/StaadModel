@@ -53,7 +53,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\STAADModel.csproj">
+    <ProjectReference Include="..\STAADModel\STAADModel.csproj">
       <Project>{fa91bcdf-4c09-47b6-b5df-f0d7a7b39162}</Project>
       <Name>STAADModel</Name>
     </ProjectReference>

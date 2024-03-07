@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Interop.OpenSTAADUI">
-      <HintPath>OpenSTAAD\Interop.OpenSTAADUI.dll</HintPath>
+      <HintPath>..\OpenSTAAD\Interop.OpenSTAADUI.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="PresentationCore" />
